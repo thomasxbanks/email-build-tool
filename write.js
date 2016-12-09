@@ -29,7 +29,7 @@ const email = {
     "xwrap": "</td></tr></table>",
     "xbody": "</body>",
     "xhead": "</head>",
-    "xhtml": "</html"
+    "xhtml": "</html>"
 }
 
 // Define overrides for base options
@@ -45,9 +45,9 @@ const cellText = (options, content) => {
 // Functin to create an image block
 const cellImg = (options) => {
     if (options.url != '') {
-        email.content.push('<table cellpadding="0" cellspacing="0" border="0" bgcolor="' + options.background + '" style="width: 100%; max-width: ' + options.width + 'px;"><tr><td align="' + options.align + '" valign="' + options.valign + '"><a href="' + options.url + '" style="display: block; padding: 0; margin: 0;"><img src="' + options.src + '" alt="' + options.alt + '" style="display: block; padding: 0; margin: 0; outline: 0; border: 0; width: 100%;" /></td></tr></table>')
+        email.content.push('<table cellpadding="0" cellspacing="0" border="0" bgcolor="' + options.background + '" style="width: 100%; max-width: ' + options.width + 'px;"><tr><td align="' + options.align + '" valign="' + options.valign + '"><a href="' + options.url + '" style="display: block; padding: 0; margin: 0;"><img src="' + options.src + '" alt="' + options.alt + '" width="'+options.width+'" style="display: block; padding: 0; margin: 0; outline: 0; border: 0; width: 100%;" /></td></tr></table>')
     } else {
-        email.content.push('<table cellpadding="0" cellspacing="0" border="0" bgcolor="' + options.background + '" style="width: 100%; max-width: ' + options.width + 'px;"><tr><td align="' + options.align + '" valign="' + options.valign + '"><img src="' + options.src + '" alt="' + options.alt + '" style="display: block; padding: 0; margin: 0; width: 100%;" /></td></tr></table>')
+        email.content.push('<table cellpadding="0" cellspacing="0" border="0" bgcolor="' + options.background + '" style="width: 100%; max-width: ' + options.width + 'px;"><tr><td align="' + options.align + '" valign="' + options.valign + '"><img src="' + options.src + '" alt="' + options.alt + '" width="'+options.width+'" style="display: block; padding: 0; margin: 0; width: 100%;" /></td></tr></table>')
     }
 }
 
