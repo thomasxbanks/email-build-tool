@@ -1,0 +1,19 @@
+{
+  "name": "email-build-tool",
+  "version": "0.1.0",
+  "description": "HTML email build tool",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && node write.js && copyfiles images/*.* dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thomasxbanks",
+  "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^1.0.0",
+    "image-size": "^0.5.0"
+  },
+  "dependencies": {
+    "write-file": "^1.0.0"
+  }
+}

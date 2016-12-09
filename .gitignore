@@ -1,0 +1,5 @@
+# The dreaded node modules!
+node_modules/**
+
+# built files - recompile them, lazy!
+dist/**
