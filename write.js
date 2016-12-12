@@ -18,7 +18,7 @@ const email = {
     },
     "wrap": "<table cellpadding='0' cellspacing='0' border='0' style='width: 100%;'><tr><td align='center' valign='top'>",
     "mso": {
-        "tag": "<!--[if gte mso 9]><table cellpadding='0' cellspacing='0'",
+        "tag": "<!--[if gte mso 9]><table cellpadding='0' cellspacing='0' style='background: none;'",
         "width": "600",
         "xtag": "><tr><td align='center' valign='top'><![endif]-->"
     },
