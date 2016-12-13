@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>  @media screen and (max-width: 640px){.resFull { width: 300px !important; } .resWrap { width: 280px !important; } .resCell { width: 280px !important; } }</style>
+</head>
+<body>
+
+  <table class="resFull" cellpadding="0" cellspacing="0" align="center" width="640">
+    <tr>
+      <td align="left" valign="top" width="10"></td>
+      <td class="resWrap" align="left" valign="top" width="620">
+
+
+        <table class="resCell" cellpadding="0" cellspacing="0" align="left" width="310">
+          <tr>
+            <td align="left" valign="top" width="10"></td>
+            <td><br><img src="http://placecage.com/300/400" alt="" style="display: block; padding: 0; margin: 0; width: 100%;"><br></td>
+            <td align="left" valign="top" width="10"></td>
+          </tr>
+        </table>
+
+
+        <table class="resCell" cellpadding="0" cellspacing="0" align="left" width="310">
+          <tr>
+            <td align="left" valign="top" width="10"></td>
+            <td><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ad perferendis, reprehenderit animi esse voluptatum qui repellat accusantium quaerat excepturi facilis, omnis velit ipsam porro quibusdam distinctio, aperiam explicabo aliquam odit dolor. Magnam ea quaerat quisquam incidunt dolor, a optio autem tempore alias repellendus obcaecati commodi laboriosam provident animi, sunt officia dolorem in quo explicabo magni! Harum quam voluptatem minus consectetur aliquid quis ullam rerum modi optio vero sapiente tempora atque delectus dignissimos quasi obcaecati, necessitatibus laborum doloremque? Debitis, quam.<br><br></td>
+            <td align="left" valign="top" width="10"></td>
+          </tr>
+        </table>
+
+
+      </td>
+      <td align="left" valign="top" width="10"></td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+
+
+,
+t.DoubleColumnRes({
+    right: t.FullText({
+        gutter: null,
+        text: "<br />I am right text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ratione magni, provident aliquam voluptas tempora ipsa possimus animi mollitia nam libero quis ea nulla sapiente rerum culpa incidunt facilis cupiditate!<br /><br />"
+    }) + t.CTA({
+        text: 'Read more',
+        url: 'http://www.shoot-the-moon.co.uk/blog/micro-interactions-to-delight-and-annoy/',
+        gutter: null
+    }),
+    left: t.FullImg({
+        src: 'http://placecage.com/450/300',
+        alt: 'This is an alt text example',
+        url: 'www.yourmum.com',
+        gutter: null
+    })
+})

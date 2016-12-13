@@ -1,0 +1,87 @@
+/* GENERAL FIXES */
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100% !important;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div, p, a, li, td {
+    webkit-text-size-adjust: none;
+}
+
+#outlook a {
+    /* Force Outlook to provide a 'view in browser' menu link. */
+    padding: 0;
+}
+
+
+/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+
+.ExternalClass {
+    width: 100%;
+}
+
+
+/* Force Hotmail to display emails at full width */
+
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%;
+}
+
+
+/* Force Hotmail to display normal line spacing. */
+
+img {
+    border: 0px;
+    outline: none;
+    display: block;
+    text-decoration: none;
+    border: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+a img {
+    border: none;
+}
+
+p {
+    margin: 0px 0px !important;
+}
+
+table td {
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+
+a {
+    color: #33b9ff;
+    text-decoration: none;
+    text-decoration: none !important;
+}
+
+.resFull { width: 100% !important; }
+
+@media screen and (max-width: "+x.width+"px) {
+    .resFull {
+        width: 100% !important;
+    }
+    .resWrap {
+        width: "+((x.width - x.gutter) / 2)+"px !important;
+    }
+    .resCell {
+        width: 100% !important;
+    }
+}

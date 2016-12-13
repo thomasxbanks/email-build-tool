@@ -4,7 +4,7 @@
   "description": "HTML email build tool",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && mkdir dist && node write.js && copyfiles images/*.* dist",
+    "build": "rm -rf dist && mkdir dist && node src/write.js && copyfiles images/*.* dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "thomasxbanks",
